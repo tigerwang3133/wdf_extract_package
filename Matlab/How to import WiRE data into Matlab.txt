@@ -1,0 +1,26 @@
+How to import WiRE data into Matlab
+-----------------------------------
+
+The files in this folder allow data stored in Renishaw's WiRE WDF format
+to be imported into Matlab.  If you want to access data stored in the
+older WXD format, we recommend converting these files to WDF format first
+by using the converter built in to WiRE.
+
+We recommend that you copy these Maltab .m files to a new folder on your
+computer, and then add that folder to the Matlab path (see the ADDPATH
+command in Matlab for further details).  The folder should contain the
+following files:
+ * WdfReader.m
+ * WdfError.m
+ * WiREDataType.m
+ * WiREDataUnit.m
+ * WiREMeasurementType.m
+ * WiREScanBasicType.m
+ * WiREScanType.m
+
+In Matlab, you can then type "help WdfReader" to read detailed information
+about how to use the WdfReader class.
+
+WdfReader.m is the main file used to access WDF data from Matlab; the other
+files provide custom enumerations or datatypes that support WdfReader, and
+will rarely need to be used directly.
