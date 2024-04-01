@@ -1,2 +1,2 @@
 # wdf_extract_package
- extract image and spectra in wdf
+ A Matlab code for extracting images and spectra in .wdf files from Renishaw Raman systems. 
